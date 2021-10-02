@@ -24,7 +24,6 @@ def get_data(config_path):
     df.to_csv(raw_local_file_path, sep=",", index=False)
 
 
-
 if __name__ == '__main__':
     args = argparse.ArgumentParser()
 
@@ -33,4 +32,3 @@ if __name__ == '__main__':
     parsed_args = args.parse_args()
 
     get_data(config_path=parsed_args.config)
-
